@@ -1,0 +1,279 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+li {
+    list-style: none;
+
+}
+
+a {
+    text-decoration: none;
+    color: blueviolet;
+    font-size: 18px;
+    }
+
+a:hover {
+    color: rgb(0, 195, 255);
+}
+
+.home {
+    text-decoration: none;
+    font-size: 18px;
+    color: rgb(0, 195, 255);
+
+}
+
+header {
+    height: 100vh;
+    background-image: url(img/fundo.jpg);
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    padding: 0 2rem;
+}
+
+.navbar {
+    width: 100%;
+    height: 60px;
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    align-items: flex-end;
+    justify-content: right;
+}
+
+.navbar .logo a {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.navbar .links {
+    display: flex;
+    gap: 2rem;
+}
+
+
+.navbar .toggle_btn {
+    font-size: 1.5rem;
+    cursor: pointer;
+    display: none;
+}
+
+.action_btn {
+    background-color: blueviolet;
+    color: #fff;
+    padding: 0.5rem 1rem;
+    border: none;
+    outline: none;
+    border-radius: 20px;
+    font-size: 0.8rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: scale 0.2 ease;
+}
+
+.action_btn:hover {
+    scale: 1.05;
+    color: #fff;
+}
+
+.action_btn:active {
+    scale: 0.95;
+}
+
+.dropdown_menu {
+    display: none;
+    position: absolute;
+    right: 2rem;
+    top: 60px;
+    height: 0;
+    width: 300px;
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(15px);
+    border-radius: 10px;
+    overflow: hidden;
+    transition: height 0.2 cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.dropdown_menu.open {
+    height: 240px;
+}
+
+.dropdown_menu .action_btn {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.dropdown_menu li {
+    padding: 0.7rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+@media(max-width:992px) {
+
+    .navbar .links,
+    .navbar .action_btn {
+        display: none;
+    }
+
+    .navbar .toggle_btn {
+        display: block;
+
+    }
+
+    .dropdown_menu {
+        display: block;
+    }
+
+}
+
+@media(max-width:576px) {
+    .dropdown_menu {
+        left: 2rem;
+        width: unset;
+    }
+}
+
+
+.nome {
+
+    font-size: 2.5em;
+    font-family: 'Emilys Candy', cursive;
+    position: relative;
+    left: -30%;
+    align-items: center;
+
+
+}
+
+.responsive {
+    max-width: 60%;
+    height: auto;
+    margin: 0 auto;
+    text-align: right;
+
+}
+
+
+
+.front {
+    animation: float 3s ease-in-out infinite;
+}
+
+@keyframes float {
+
+    0%,
+    100% {
+        transform: translateY(2px);
+    }
+
+    50% {
+        transform: translateY(-6px);
+    }
+}
+
+p {
+    margin-left: 15%;
+    margin-right: 15%;
+    margin-top: 2%;
+    text-align: justify;
+    font-size: 1em;
+
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  
+  .habilidades {
+    text-align: center;
+    padding-top: 18%;
+    font-family: 'Merriweather', serif;
+    font-size: 2em;
+    margin: 0;
+  }
+  
+  
+  @media screen and (max-width: 768px) {
+    .container {
+      justify-content: flex-start;
+    }
+  
+    .snip1527 {
+      width: 100%;
+      max-width: 400px;
+    }
+  }
+  
+  @media screen and (max-width: 480px) {
+    .container {
+      padding: 0 10px;
+    }
+  
+    .snip1527 {
+      max-width: 100%;
+    }
+  }
+  
+
+.texto {
+    margin-left: 20px;
+    display: flex;
+    float: left;
+}
+
+@media screen and (max-width: 768px) {
+    .container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .texto {
+        margin: 20px 0;
+        display: inline-flex;
+        float: left;
+    }
+}
+
+.fundo {
+    background-image: url(img/1339.jpg);
+    background-size: cover;
+    margin: 0;
+}
+
+.logos_redes_sociais{
+    padding: 12%;
+    display: inline-block;
+    justify-content: center;
+}
+.img-thumbnail{
+    width: 500px;
+    margin-top: 2%;
+    margin-left: 10%;
+    float: left;
+
+}
+@media(max-width: 768px){
+
+    .img-thumbnail{
+        width: 70%;
+        height: 50%;
+        justify-content: center;
+
+    }
+}
+.text-center{
+    margin-top: 6%;
+    align-items: center;
+    justify-content: flex-end;
+
+
+}

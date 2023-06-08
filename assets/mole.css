@@ -1,0 +1,39 @@
+body {
+    text-align: center;
+}
+
+#board {
+    width: 100%; /* Alterado para ocupar a largura total da tela */
+    max-width: 419px; /* Adicionado um limite máximo para evitar que fique muito largo em telas grandes */
+    justify-content: center;
+    flex-wrap: wrap;
+    background: url("img/fundo.png");
+    background-size: cover;
+    border: 1px solid rgb(30, 203, 255);
+    border-radius: 25px;
+    align-items: center;
+    margin: 0 auto; /* Centraliza horizontalmente */
+}
+
+
+
+#board div {
+    width: 170px; 
+    height: 75px;
+    background-image: url("img/nuvem.png");
+    background-size: cover;
+    justify-content: center;
+    display:inline-flex;
+}
+
+#board div img {
+    width: 70px;
+    height: 70px;
+    user-select: none;
+    -moz-user-select: none;
+    -webkit-user-drag: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+    display: inline-flex;
+}
+

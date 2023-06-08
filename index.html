@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Cookie&family=Emilys+Candy&family=Foldit:wght@500;800&family=Gochi+Hand&family=Yatra+One&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Cookie&family=Emilys+Candy&family=Foldit:wght@500;800&family=Gochi+Hand&family=Kalam:wght@300&family=Yatra+One&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Foldit:wght@600&family=Merriweather:wght@700&display=swap');
+    </style>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Portfólio Daniely</title>
+    <link rel="stylesheet" href="assets/navbar.css">
+    <link rel="stylesheet" href="assets/mole.css">
+    <link rel="stylesheet" href="assets/News-Cards.css">
+    <link rel="stylesheet" href="assets/hobbies.css.css">
+
+    <script src="assets/mole.js"></script>
+    <script src="assets/navbar.js"></script>
+</head>
+
+<body>
+    <header>
+        <div class="navbar">
+            <ul class="links">
+                <b class="home">
+                    <li><b href="hero">Home</b></li>
+                </b>
+                <b>
+                    <li><a href="habilidades">Habilidades</a></li>
+                </b>
+                <b>
+                    <li><a href="#projetos">Projetos</a></li>
+                </b>
+                <b>
+                    <li><a href="#hobby">Hobby</a></li>
+                </b>
+                <b>
+                    <li><a href="hero">Contato</a></li>
+                </b>
+                <b>
+                    <li><a href="assets/CV (2).pdf">Currículo</a></li>
+                </b>
+            </ul>
+            <div class="toggle_btn">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+        </div>
+
+        <div class="dropdown_menu ">
+            <b>
+                <li><a href="#habilidades">Habilidades</a></li>
+            </b>
+            <b>
+                <li><a href="#projetos">Projetos</a></li>
+            </b>
+            <b>
+                <li><a href="hero">Hobby</a></li>
+            </b>
+            <b>
+                <li><a href="hero">Contato</a></li>
+            </b>
+            <!-- <li> <a href="#" class="action_btn">Daniely </a></li> -->
+        </div>
+
+        <script>
+            const toggleBtn = document.querySelector('.toggle_btn')
+            const toggleBtnIcon = document.querySelector('.toggle_btn i')
+            const dropDownMenu = document.querySelector('.dropdown_menu')
+
+            toggleBtn.onclick = function () {
+                dropDownMenu.classList.toggle('open')
+                const isOpen = dropDownMenu.classList.contains('open')
+                console.log('tested')
+
+                toggleBtnIcon.classList = isOpen
+                    ? 'fa-solid fa-xmark'
+                    : 'fa-solid fa-bars'
+            }               
+        </script>
+
+        <div class="nome">
+            <div style="position:sticky;
+            left:-50%;
+            top:25%;
+            margin-left: 35%;
+            margin-top:150px;">
+                <h1>Daniely Losi</h1>
+            </div>
+        </div>
+
+        <div class="responsive" style="margin-top: -6%; margin-left: 25%;">
+            <div class="front">
+                <img src="assets/img/logoe.png" alt="Nature" class="responsive" width="600" height="400">
+            </div>
+        </div>
+
+        <div id="habilidades" class="habilidades">
+            <h2>Habilidades</h2>
+        </div>
+        <p > &nbsp; Inspirado pela magia da tecnologia e criatividade,
+            adoro desenvolver projetos sempre em busca de feedbacks
+            construtivos para melhorar meu desempenho. Além disso, sou altamente responsável e determinada em cumprir
+            com minhas obrigações, minha habilidade de comunicação é efetiva, tornando-me um membro valioso em equipes
+            de trabalho. <br> &nbsp; Proativa, ou seja, tenho a capacidade de identificar e resolver problemas de forma
+            autônoma,
+            sou esforçada em atingir meus objetivos e metas de trabalho, sempre disposta a aprender novas
+            habilidades e técnicas, sou confiante de que posso aplicá-las em novos projetos e desafios.</p>
+        <div style="padding-top: 2%;"></div>
+
+        <p1 style="font-size: 20px; font-weight:bolder; "> Para descobrir mais habilidades, clique no gato para
+            capturá-lo. </p1>
+        <h2 id="score" style="text-align: center; margin: 0 auto;">
+        </h2>
+        <div id="board" style="margin: 0 auto;">
+        </div>
+
+        <div id="#projetos" class="habilidades" style="margin-top: -12%;">
+            <h2>Projetos</h2>
+            <div class="container">
+              <figure class="snip1527">
+                    <div class="image"><img src="assets/img/be.png" alt="pr-sample23" /></div>
+                    <figcaption>
+                        <h3>Banda Estreita</h3>
+                        <p>
+                            Site para a Banda Estreita da Clicheria Blumenau, com a ideia de facilitar o acesso dos
+                            clientes na área do cliente e também para que eles entendam o processo de trabalho dentro da
+                            empresa.
+                        </p>
+                    </figcaption>
+                    <a href="https://banda-estreita-j5e5xufo0-daniely-losi.vercel.app/" target="_blank"></a>
+                </figure>
+                <figure class="snip1527">
+                    <div class="image"><img src="assets/img/gdsistemas.png" alt="pr-sample23" /></div>
+                    <figcaption>
+                        <h3>GD Sistemas</h3>
+                        <p>
+                            Projeto desenvolvido com a função do controle de serviços, com o controle de produção do
+                            dia, ganhos e gastos.
+                            <br>Sistema financeiro desenvolvido por Gabriel Bobello e Daniely Losi.
+                        </p>
+                    </figcaption>
+                    <a href="https://github.com/GBobello/GDFinanceiro" target="_blank"></a>
+                </figure>
+                <figure class="snip1527">
+                    <div class="image"><img src="assets/img/histo.png" alt="pr-sample25" /></div>
+                    <figcaption>
+                        <h3>Furb - Histologia</h3>
+                        <p>
+                            Site desenvolvido para Faculdade Regional de Blumenau, para os alunos de Histologia, no
+                            laboratório
+                            listando as lâminas, especificando e apontando o estudo feito, as fotos e desenvolvimento
+                            feito por mim, Daniely Losi
+                        </p>
+                    </figcaption>
+                    <a href="#"></a>
+                </figure>
+                <figure class="snip1527">
+                    <div class="image"><img src="assets/img/ponto.png" alt="pr-sample23" /></div>
+                    <figcaption>
+                        <h3>Sistema de Ponto</h3>
+                        <p>
+                            Sistema de ponto online para gerenciar e registrar as horas trabalhadas pelos funcionários
+                            de uma empresa.
+                            Ele permite que os funcionários registrem suas entradas e saídas de trabalho.
+                        </p>
+                    </figcaption>
+                    <a href="#"></a>
+                </figure>
+            </div>
+
+        </div>
+        
+            <div class="habilidades" >
+          <h2>Hobbies</h2>
+            </div>
+          <section>
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-6 order-lg-2">
+                    <div class="p-5"><img class="img-thumbnail " src="assets/img/hobby.png" width="500" height="500"></div>
+                </div>
+                <div class="col-lg-6 order-lg-1">
+                    <div class="text-center">
+                        <p ><br><span style="color: rgb(0, 0, 0);">Dedico parte do meu tempo livre para pedalar em locais próximos à natureza, apreciar a paisagem e desafiar-me fisicamente são atividades que me trazem grande prazer e satisfação.</span><br><span style="color: rgb(0, 0, 0);">&nbsp; Praticante do violino, a música desempenha um papel significativo em minha vida, e tocar o violino é uma forma de expressar minha criatividade e de me envolver em uma atividade artística profundamente gratificante.</span><br><span style="color: rgb(0, 0, 0);">&nbsp; Tenho um interesse nas áreas de bioquímica e nutrição humana, me dedico a estudar as reações químicas que ocorrem dentro do nosso corpo e como a alimentação adequada influencia nossa saúde e bem-estar. Busco constantemente ampliar meu conhecimento.</span><br><span style="color: rgb(0, 0, 0);">&nbsp; Dentro do meu tempo livre, também dedico-me a projetos pessoais relacionados ao desenvolvimento de front-end. Utilizo minhas habilidades de programação para criar interfaces de usuário atraentes e funcionais, buscando sempre aprimorar minha capacidade de criar experiências digitais envolventes e de alta qualidade.</span><br><span style="color: rgb(0, 0, 0);">&nbsp; Essas atividades representam minha busca contínua por crescimento pessoal e profissional, demonstrando meu comprometimento com o aprendizado, a exploração criativa e o equilíbrio entre mente, corpo e espírito.</span><br><br></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+            <div class="logos_redes_sociais">
+                <a href="https://www.linkedin.com/in/daniely-losi-200365241" target="_blank"><img src="assets/img/linkedln.png" style="width:50px;"></a>
+                <a href = "mailto:danylosi15@gmail.com"><img src="assets/img/email.png" style="width:50px;"></a>
+                <a href="https://www.instagram.com/daniely_losi/" target="_blank"><img src="assets/img/insta.png" style="width:50px;"></a>
+                <a href="https://github.com/Daniely-Losi" target="_blank"><img src="assets/img/git.png" style="width:50px;"></a>
+            </div>
+    </header>
+</body>
+
+</html>
