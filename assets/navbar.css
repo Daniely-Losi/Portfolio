@@ -277,3 +277,15 @@ p {
 
 
 }
+p{
+    text-align: center;
+    margin-left: 25%;
+    margin-right: 25%;
+}
+@media(max-width: 768px){
+    p{    
+        margin-left: 5%;
+        margin-right: 5%;
+
+    }
+}
