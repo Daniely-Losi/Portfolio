@@ -11,7 +11,7 @@ const frases = [
   "Inovadora",
   "Compromisso",
   "Comunicativa",
-  "Extorvertida",
+  "Extrovertida",
   "Proativa ",
   "Criativa",
 ];
